@@ -1,0 +1,59 @@
+# Dictionary of all elements matched with their atomic masses.
+a = {1 : 1, 2 : 4, 3 : 7, 4 : 9,\
+                 5 : 11, 6 : 12, 7 : 14, 8 : 16,\
+                 9 : 19, 10 : 20, 11 : 23, 12 : 24,\
+                 13 : 27, 14 : 28, 15 : 31, 16 : 32,\
+                 17 : 35.5, 18 : 40, 19 : 39, 20 : 40,\
+                 21 : 45, 22 : 48, 23 : 51, 24 : 52,\
+                 25 : 55, 26 : 56, 27 : 59, 28 : 59,\
+                 29 : 64, 30 : 65, 31 : 70, 32 : 73,\
+                 33 : 75, 34 : 79, 35 : 80, 36 : 85,\
+                 37 : 85, 38 : 88, 39 : 89, 40 : 91,\
+                 41 : 93, 42 : 96, 43 : 99, 44 : 101,\
+                 45 : 103, 46 : 106, 47 : 108, 48 : 112,\
+                 49 : 115, 50 : 119, 51 : 122, 52 : 128,\
+                 53 : 127, 54 : 131, 55 : 133, 56 : 137,\
+                 57 : 139, 58 : 140, 59 : 141, 60 : 144,\
+                 61 : 145, 62 : 150, 63 : 152, 64 : 157,\
+                 65 : 159, 66: 163, 67 : 165, 68 : 167,\
+                 69 : 169, 70 : 173, 71 : 175, 72 : 178,\
+                 73 : 181, 74 : 184, 75 : 186, 76 : 190,\
+                 77 : 192, 78 : 195, 79 : 197, 80 : 201,\
+                 81 : 204, 82 : 207, 83 : 209, 84 : 209,\
+                 85 : 210, 86 : 222, 87 : 223, 88 : 226,\
+                 89 : 227, 90 : 232, 91 : 231, 92 : 238,\
+                 93 : 237, 94 : 244, 95 : 243, 96 : 247, 97 : 247,\
+                 98 : 251, 99 : 252, 100 : 257, 101 : 258, 102 : 259,\
+                 103 : 262, 104 : 261, 105 : 262, 106 : 266, 107 : 264,\
+                 108 : 269, 109 : 268, 110 : 271, 111 : 272, 112 : 285,\
+                 113 : 284, 114 : 289, 115 : 288, 116 : 292, 117 : 294,\
+                 118 : 294}
+
+# List of all elements to allow for easy inclusion testing.
+b = ['Hydrogen', 'Helium', 'Lithium', 'Berrylium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen', 'Fluorine', 'Neon', 'Sodium',\
+                 'Magnesium', 'Aluminium', 'Silicon', 'Phosphorus', 'Sulphur', 'Chlorine', 'Argon', 'Potassium', 'Calcium', 'Scanadium', 'Titanium',\
+                 'Vanadium', 'Chromium', 'Manganese', 'Iron', 'Cobalt', 'Nickel', 'Copper', 'Zinc', 'Gallium', 'Germanium',\
+                 'Arsenic', 'Selenium', 'Bromine', 'Krypton', 'Rubidium', 'Strontium', 'Yttrium', 'Zirconium', 'Niobium', 'Molybdenum',\
+                 'Technetium', 'Ruthenium', 'Rhodium', 'Palladium', 'Silver', 'Cadmium', 'Indium', 'Tin', 'Antimony', 'Tellurium',\
+                 'Iodine', 'Xenon', 'Cesium', 'Barium', 'Lanthanum', 'Cerium', 'Praseodymium', 'Neodymium', 'Promethium', 'Samarium',\
+                 'Europium', 'Gadolinium', 'Terbium', 'Dysprosium', 'Holmium', 'Erbium', 'Thulium', 'Ytterbium', 'Lutetium', 'Hafnium',\
+                 'Tantalum', 'Tungsten', 'Rhenium', 'Osmium', 'Iridium', 'Platinum', 'Gold', 'Mercury', 'Thallium', 'Lead',\
+                 'Bismuth', 'Polonium', 'Astatine', 'Radon', 'Francium', 'Radium', 'Actinium', 'Thorium', 'Protactinium', 'Uranium',\
+                 'Neptunium', 'Plutonium', 'Americium', 'Curium', 'Berkelium', 'Californium', 'Einsteinium', 'Fermium', 'Mendelevium', 'Nobelium',\
+                 'Lawrencium', 'Rutherfordium', 'Dubnium', 'Seaborgium', 'Bohrium', 'Hassium', 'Meitnerium', 'Darmstadtium', 'Roentgenium', 'Copernicium',\
+                 'Nihonium', 'Flerovium', 'Moscovium', 'Livermorium', 'Tennessine', 'Oganesson']
+
+# User's Input
+usr = int(input("Enter the Atomic Number: "))
+# Element name
+at_n = b[usr - 1]
+
+# Calculates and Displays the output
+if usr in range(1, 119):
+    at_no = usr
+    n = a[usr] - usr
+    print("Element is -", at_n,
+          "\nAtomic Number -", usr, "\nElectrons -", at_no, "\nProtons -", at_no, "\nNeutrons -", n)
+
+else:
+    print("Please Try Again")
