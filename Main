@@ -30,7 +30,7 @@ a = {1 : 1, 2 : 4, 3 : 7, 4 : 9,\
                  118 : 294}
 
 # List of all elements to allow for easy inclusion testing.
-b = ['Hydrogen', 'Helium', 'Lithium', 'Berrylium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen', 'Fluorine', 'Neon', 'Sodium',\
+b = {'Hydrogen', 'Helium', 'Lithium', 'Berrylium', 'Boron', 'Carbon', 'Nitrogen', 'Oxygen', 'Fluorine', 'Neon', 'Sodium',\
                  'Magnesium', 'Aluminium', 'Silicon', 'Phosphorus', 'Sulphur', 'Chlorine', 'Argon', 'Potassium', 'Calcium', 'Scanadium', 'Titanium',\
                  'Vanadium', 'Chromium', 'Manganese', 'Iron', 'Cobalt', 'Nickel', 'Copper', 'Zinc', 'Gallium', 'Germanium',\
                  'Arsenic', 'Selenium', 'Bromine', 'Krypton', 'Rubidium', 'Strontium', 'Yttrium', 'Zirconium', 'Niobium', 'Molybdenum',\
@@ -41,7 +41,7 @@ b = ['Hydrogen', 'Helium', 'Lithium', 'Berrylium', 'Boron', 'Carbon', 'Nitrogen'
                  'Bismuth', 'Polonium', 'Astatine', 'Radon', 'Francium', 'Radium', 'Actinium', 'Thorium', 'Protactinium', 'Uranium',\
                  'Neptunium', 'Plutonium', 'Americium', 'Curium', 'Berkelium', 'Californium', 'Einsteinium', 'Fermium', 'Mendelevium', 'Nobelium',\
                  'Lawrencium', 'Rutherfordium', 'Dubnium', 'Seaborgium', 'Bohrium', 'Hassium', 'Meitnerium', 'Darmstadtium', 'Roentgenium', 'Copernicium',\
-                 'Nihonium', 'Flerovium', 'Moscovium', 'Livermorium', 'Tennessine', 'Oganesson']
+                 'Nihonium', 'Flerovium', 'Moscovium', 'Livermorium', 'Tennessine', 'Oganesson'}
 
 # User's Input
 usr = int(input("Enter the Atomic Number: "))
